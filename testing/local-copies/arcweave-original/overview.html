@@ -1,0 +1,570 @@
+<!DOCTYPE html><html><head>
+        <!-- META Tags -->
+        <meta http-equiv="Content-Type" content="">
+        <title>Overview | Arcweave</title>
+        <meta http-equiv="X-UA-Compatible" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- SEO -->
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="twitter:card" value="summary" content="">
+                    <link rel="canonical" href="https://arcweave.com/docs/1.0/overview">
+                                                                                            <meta property="og:type" content="">
+                                                                                                                        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/app.css">
+
+                    <!-- Favicon -->
+            <link rel="apple-touch-icon" href="images/favicon-32x32.png">
+            <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png">
+        
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+                    <link rel="stylesheet" href="css/font-awesome-v4-shims.css">
+        
+        <!-- Dynamic Colors -->
+        <style>
+    :root {
+        --primary: #787AF6;
+        --secondary: #2b9cf2;
+    }
+
+    :not(pre)>code[class*=language-], pre[class*=language-] {
+        border-top: 3px solid #787AF6;
+    }
+
+    .bg-gradient-primary {
+        background: linear-gradient(87deg, #787AF6 0, #2b9cf2 100%) !important;
+    }
+
+    [v-cloak] > * {
+        display: none;
+    }
+
+    [v-cloak]::before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #F2F6FA;
+    }
+
+    /**************************************/
+    /**************** Root ****************/
+    /**************************************/
+    :root {
+        --sidebar: #0B1E38;
+        --documentation: #0F294C;
+        --navbar: #071529;
+        --search: rgb(40, 47, 82);
+        --orange: #FEA426;
+    }
+
+    html, body {
+        color: #F8FAFC;
+        background-color: var(--documentation);
+    }
+
+    .medium-zoom-overlay {
+        background-color: var(--documentation) !important;
+    }
+
+    /**************************************/
+    /**************** Cards ***************/
+    /**************************************/
+    .card.is-default {
+        background-color: #2F365F;
+        color: #F8FAFC;
+        border: none;
+    }
+
+    .card.is-default ul {
+        padding-inline-start: 15px;
+    }
+
+    .card.is-default ul li {
+        list-style: none;
+    }
+
+    .alert mark {
+        background:rgba(255,255,255,0.2) !important;
+    }
+    .alert.is-info {
+        background-color: #895ca0;
+    }
+
+    .alert.is-danger, .alert.is-warning {
+        background-color: #8e3849;
+    }
+
+    .alert.is-success {
+        background-color: #31825f;
+    }
+    .alert.is-primary {
+        background-color: #515288;
+    }
+
+
+
+
+    /**************************************/
+    /********** Documentation *************/
+    /**************************************/
+    .documentation {
+        color: #d3d9e0;
+    }
+
+    .documentation strong {
+        color: #d4dbe2;
+    }
+
+    .documentation mark {
+        background: #274369;
+        color: #fff;
+        border-radius: 5px;
+        padding: .25rem .40rem;
+        /* border-radius: 3px; */
+        /* padding: .25rem .40rem; */
+        /* background-image: linear-gradient(to right, #FEA426, #FEA426);
+        background-position: 0 95%;
+        background-repeat: repeat-x;
+        background-size: 8px 3px; */
+
+    }
+
+    .documentation table thead th:empty {
+        display:none;
+    }
+
+    .documentation p img {
+        margin:20px 0 10px 0;
+    }
+
+    .documentation .icon {
+        margin:0;
+    }
+
+    .documentation h1 {
+        color: #F8FAFC;
+    }
+
+    .documentation h2 a, a:hover {
+        color: #DAE1E7;
+    }
+
+    .documentation h2 a:hover {
+        color: #fff;
+    }
+
+    .documentation a {
+        color: var(--orange);
+        font-weight:bold;
+    }
+
+    .documentation a:hover {
+        text-decoration:underline;
+    }
+
+    .documentation hr {
+        border-style:solid;
+        border-color:#8795a1;
+    }
+
+    .documentation :not(pre)>code {
+        background-color: var(--navbar);
+    }
+    .documentation>ul:first-of-type li {
+        border-color:#26436a;
+        border-style: solid;
+
+    }
+    .documentation ol>li::marker {
+        color:#FEA426;
+    }
+
+    .documentation>ul:first-of-type li::before {
+        content:none !important;
+    }
+
+    .documentation ol>li, .documentation ul>li {
+        line-height: 2;
+    }
+    .documentation ul {
+        list-style: none; /* Remove default bullets */
+    }
+
+    .documentation ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #FEA426; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        font-size:16px;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .documentation.is-dark pre[class*=language-] {
+        background: #11213a!important;
+        /* background-color:var(--navbar) !important; */
+        line-height: 1 !important;
+        padding:20px 0;
+        margin:20px 0 40px 0;
+    }
+
+    .documentation.is-dark .token.block-comment, .documentation.is-dark .token.cdata, .documentation.is-dark .token.comment, .documentation.is-dark .token.doctype, .documentation.is-dark .token.prolog {
+        color: #516d94;
+    }
+
+    .documentation.is-dark pre code {
+        background-color:var(--navbar) !important;
+        padding: 6px 8px;
+        border-radius: 6px;
+        color: var(--primary);
+        margin:0 0 10px 0;
+
+    }
+
+    .documentation.is-dark  pre.language-json {
+        background:var(--navbar) !important;
+        height:400px;
+    }
+
+
+    /**************************************/
+    /************** Tables ****************/
+    /**************************************/
+    table {
+    background-color: #071529;
+    color: #F8FAFC;
+    }
+
+    table tr, table td, table th {
+    border-width: 1px;
+    border-color: #272e56;
+    }
+
+    table td .m {
+    font-family: monospace;
+    font-size:16px;
+    }
+
+
+    table tr:hover, table td:hover, table th:hover {
+    background-color: #1D2244;
+    }
+
+    /**************************************/
+    /*************** Search ***************/
+    /**************************************/
+    .search-box {
+        border: none;
+    }
+
+    .search-box input input:focus {
+        background: var(--search);
+        color: var(--white);
+    }
+
+    .search-box input:focus {
+        background: var(--search);
+        color: var(--white);
+    }
+
+    .internal-autocomplete-result {
+        background: var(--search);
+    }
+
+    .internal-autocomplete-result ul li .page-title {
+        color: var(--white);
+    }
+
+    /**************************************/
+    /*************** Sidebar **************/
+    /**************************************/
+    .sidebar {
+        border: none;
+        background-color: var(--sidebar);
+    }
+    .sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar {
+      scrollbar-width: thin;
+      scrollbar-color: var(--orange) var(--navbar);
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background: var(--sidebar);
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background-color: var(--orange) ;
+      /* border-radius: 6px; */
+      /* border: 3px solid yellow; */
+    }
+
+    .sidebar>ul>li>h2 {
+        color:#455563;
+    }
+    .sidebar>ul>li>ul>li.is-active {
+        padding-left:0;
+    }
+
+    .sidebar>ul>li>ul>li a{
+        color: #a5b2bd;
+    }
+    .sidebar>ul>li>ul>li.is-active a{
+        color: var(--white);
+    }
+
+    .sidebar>ul>li>ul>li.is-active:before {
+        background: var(--orange);
+    }
+
+    /**************************************/
+    /*************** Navbar ***************/
+    /**************************************/
+    .switch-label {
+        border-width:0;
+    }
+</style>
+
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="">
+
+        
+    </head>
+    <body>
+        <div id="app" v-cloak="">
+            <div class="fixed pin-t pin-x z-40">
+    <div class="bg-gradient-primary text-white h-1"></div>
+
+    <nav class="flex items-center justify-between text-black bg-navbar shadow-xs h-16">
+        <div class="flex items-center flex-no-shrink">
+            <a href="/" class="flex items-center flex-no-shrink text-black mx-4">
+                <svg width="37" height="30" viewBox="0 0 100 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M99.986 72.221L99.99 72.231L99.986 72.221ZM99.9681 72.1851C92.8371 65.2872 84.3591 59.8478 74.9885 56.3311L56.1537 15.9397H43.8363L24.9955 56.341C15.615 59.8677 7.13304 65.3191 0 72.229L33.6807 0H66.3074L99.9681 72.1851Z" fill="white"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 72.2279C13.0686 59.5678 30.6641 51.8071 50.0089 51.8071C69.3439 51.8071 86.9354 59.5618 100 72.214L85.5486 78.9525C75.5205 72.0785 63.2529 68.0338 50.0089 68.0338C36.755 68.0338 24.4795 72.0845 14.4494 78.9665L0 72.2279Z" fill="#FEA426"></path>
+    <path d="M50.0007 48.1889C56.053 48.1889 60.9594 43.2825 60.9594 37.2302C60.9594 31.1779 56.053 26.2715 50.0007 26.2715C43.9484 26.2715 39.042 31.1779 39.042 37.2302C39.042 43.2825 43.9484 48.1889 50.0007 48.1889Z" fill="#FEA426"></path>
+</svg>
+                <p class="inline-block font-semibold mx-1 text-grey-dark">
+                    Arcweave Docs
+                </p>
+            </a>
+
+            <div class="switch">
+                <input type="checkbox" name="1" id="1" v-model="sidebar" class="switch-checkbox">
+                <label class="switch-label" for="1"></label>
+            </div>
+        </div>
+
+        <div class="block mx-4 flex items-center">
+            
+            
+
+            
+            
+            
+
+                        <!-- signalzen start -->
+                        <!-- <script type="text/javascript">
+            var _sz = {
+                layout: {
+                    horizontalOffset: 10, // Allows to tune the position your chat box to right or left in pixels
+                    verticalOffset: 10, // Allows to tune the position your chat box to top or bottom in pixels
+                    horizontalPosition: 'right', // Possible values: 'left', 'right'
+                    verticalPosition: 'bottom', // Possible values: 'top', 'bottom'
+                }
+            };
+                var _sz=_sz||{};_sz.appId="561a40ec",function(){var e=document.createElement("script");e.src="https://cdn.signalzen.com/signalzen.js",e.setAttribute("async","true"),document.documentElement.firstChild.appendChild(e);var t=setInterval(function(){"undefined"!=typeof SignalZen&&(clearInterval(t),new SignalZen(_sz).load())},10)}();
+                </script> -->
+                        <!-- signalzen end -->
+        </div>
+    </nav>
+</div>
+
+            
+            <div>
+	<div class="sidebar" :class="[{'is-hidden': ! sidebar}]">
+    <ul>
+<li>
+<h2>Get Started</h2>
+<ul>
+<li><a href="/">Overview</a></li>
+<li><a href="/">Create account</a></li>
+<li><a href="/">Projects</a></li>
+</ul>
+</li>
+<li>
+<h2>Entities</h2>
+<ul>
+<li><a href="/">Boards</a></li>
+<li><a href="/">Elements</a></li>
+<li><a href="/">Connections</a></li>
+<li><a href="/">Notes</a></li>
+<li><a href="/">Jumpers</a></li>
+<li><a href="/">Branches</a></li>
+<li><a href="/">Components</a></li>
+<li><a href="/">Assets</a></li>
+<li><a href="/">Comments</a></li>
+</ul>
+</li>
+<li>
+<h2>Features</h2>
+<ul>
+<li><a href="/">Icons</a></li>
+<li><a href="/">Mentions</a></li>
+<li><a href="/">Play mode</a></li>
+<li><a href="/">Sharing</a></li>
+<li><a href="/">Export</a></li>
+<li><a href="/">Search</a></li>
+<li><a href="/">Settings</a></li>
+</ul>
+</li>
+<li>
+<h2>Scripting</h2>
+<ul>
+<li><a href="/">Variables</a></li>
+<li><a href="/">Arcscript</a></li>
+</ul>
+</li>
+<li>
+<h2>Integrations</h2>
+<ul>
+<li><a href="/">Unity Plugin</a></li>
+</ul>
+</li>
+</ul>
+</div>	
+	<div class="documentation is-dark" :class="{'expanded': ! sidebar}">
+		<h1>Overview</h1>
+<hr>
+<ul>
+<li><a href="/">Arcweave in a nutshell</a></li>
+<li><a href="/">Who is it for?</a></li>
+<li><a href="/">Features</a></li>
+<li><a href="/">Touch device actions</a></li>
+</ul>
+<p><img src="images/overview.jpg" alt="Arcweave overview"></p>
+<p><a name="welcome"></a></p>
+<h2>Arcweave in a nutshell</h2>
+<p>Arcweave is a cloud application for <strong>designing</strong> and <strong>prototyping games</strong> on your browser.</p>
+<p>You design your game's story and logic <strong>as diagrams</strong> on multiple <a href="/">boards</a>, connecting nodes (called <a href="/">elements</a>) and conditions (called <a href="/">branches</a>). Τhen, you can <strong>run</strong> your game's prototype on <a href="/">play mode</a>.</p>
+<p>Arcweave aims at bridging the distance between the writer and the developer. It <strong>implements logic</strong>, while staying as much <strong>writer-friendly</strong> as possible.</p>
+<p>Having its own play mode as well as various exporting options, Arcweave offers a tool for <strong>creating interactive fiction</strong> and <strong>prototyping</strong> larger-scale projects.</p>
+<p>Finally, it allows <strong>real-time collaboration</strong> for teams of two or more.</p>
+<blockquote>
+<p>{success} Did you know? Arcweave has its own series of <a href="/">YouTube tutorials</a>, covering all its features in detail.</p>
+</blockquote>
+<p><a name="who"></a></p>
+<h2>Who is it for?</h2>
+<p>Arcweave is used worldwide by:</p>
+<larecipe-card shadow=""><ul><li>Game designers &amp; developers</li>
+<li>Interactive fiction writers</li>
+<li>Conversational AI developers</li>
+<li>Narrative &amp; quest designers</li>
+<li>Escape room creators</li>
+<li>UX/UI designers</li>
+<li>Creative &amp; marketing writers</li>
+</ul></larecipe-card>
+<p><a name="features"></a></p>
+<h2>Features</h2>
+<ul>
+<li>🚩 Unlimited boards per project</li>
+<li>🧑‍🤝‍🧑 Editors collaboration in real-time</li>
+<li>🖼️ Asset management </li>
+<li>👾 4K+ game-oriented icons </li>
+<li>🛡️ Components (characters, items, locations)</li>
+<li>🚀 Export project to .JSON format</li>
+<li>🕹️ Import to Unity via our free <a href="/">plugin</a></li>
+<li>🎮 Play mode for testing the project as a choose-your-path game</li>
+<li>📱 Touch device compatibility</li>
+</ul>
+<p><a name="touch"></a></p>
+<h2>Touch device actions</h2>
+<p>This guide is intendend for mouse/trackpad + keyboard devices. Please refer to the following table for the relevant keyboard actions in touch devices. </p>
+<table>
+<thead>
+<tr>
+<th>Keyboard</th>
+<th>Touch device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Click</td>
+<td>Tap</td>
+</tr>
+<tr>
+<td>Double click</td>
+<td>Double tap</td>
+</tr>
+<tr>
+<td>Right click</td>
+<td>Long press</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>{primary} Have a question on an issue? Drop us a line in our <a href="/">Discord</a> channel! </p>
+</blockquote>
+<!-- 
+| # | Name   | Age |
+| : |   :    |  :  |
+| 1 | Saleem | 24  |
+| 2 | John   | 25  |
+| 3 | Ayman  | 26  | 
+-->
+<!-- <larecipe-card shadow>
+    Have more questions? Contact us on our [Discord](https://duckduckgo.com) channel
+</larecipe-card> -->
+<!--
+> {primary} Here is an example of danger alarm message
+asdfsdfasd
+asasdasd
+> {info} Here is an example of danger alarm message
+asasas
+> {danger} Here is an example of danger alarm message
+assasa -->
+<!-- > {warning} Here is an example of danger alarm message -->
+			</div>
+</div>
+
+            <larecipe-back-to-top></larecipe-back-to-top>
+        </div>
+
+
+        <script>
+            window.config = [];
+        </script>
+
+        <script type="text/javascript">
+            if(localStorage.getItem('larecipeSidebar') == null) {
+                localStorage.setItem('larecipeSidebar', !! 1);
+            }
+        </script>
+
+        <script src="js/app.js"></script>
+
+        <script>
+            window.LaRecipe = new CreateLarecipe(config)
+        </script>
+
+        <!-- Google Analytics -->
+                    <script async="" src="js_1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', "UA-120811199-1");
+            </script>
+                <!-- /Google Analytics -->
+
+        
+        <script>
+            LaRecipe.run()
+        </script>
+    
+
+</body></html>
