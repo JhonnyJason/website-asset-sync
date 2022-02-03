@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120811199-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120811199-1');
+        gtag('config', 'AW-996112184');
+</script>
+
+<!-- Hotjar Tracking Code for arcweave.com -->
+<!-- <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:916399,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> -->
+    
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="02zhZoDR8kKASQyUQ7ESvKV5MEknMKqantfVuZ8E">
+
+    <!-- Styles -->
+    <link href="css/6125214157193d56ee73ca06d083d4f51640878049.css" rel="stylesheet">
+
+    <!-- End Styles -->
+
+
+
+    
+    <title>Sign up | Arcweave</title>
+    <meta name="title" content="Sign up | Arcweave">
+    <meta name="description" content="Sign up to Arcweave">
+    <meta name="keywords" content="">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <link rel="canonical" href="index.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcweave.com" />
+    <meta property="og:title" content="Sign up | Arcweave" />
+    <meta property="og:description" content="Sign up to Arcweave" />
+    <meta property="og:image" content="https://arcweave.com/images/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://arcweave.com">
+    <meta name="twitter:title" content="Sign up | Arcweave">
+    <meta name="twitter:description" content="Sign up to Arcweave">
+    <meta name="twitter:image" content="https://arcweave.com/images/og-image.jpg">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LchwLQUAAAAAIn_J_fOxRckRJbkgtvaWsxoKz6-"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute("6LchwLQUAAAAAIn_J_fOxRckRJbkgtvaWsxoKz6-", {action: 'register'}).then(function(token) {
+                $('<input>').attr({
+                    type: 'hidden',
+                    name: 'g_recaptcha_response',
+                    value: token
+                }).prependTo('form')
+            });
+        });
+    </script>
+
+</head>
+
+
+
+<body class="font-sans bg-arc-blue text-white">
+
+          <div class="bg-arc-pink text-center pt-arc-5 pb-arc-5 text-12">
+        <div class="container block z-10 relative">We will be down for maintenance & updates this <strong>Friday, February 4th</strong> from <strong>11AM</strong> to <strong>12AM</strong> GMT</div>
+      </div>
+    
+    
+<header class="relative z-100">
+    <div class="header-area">
+        <div class="container">
+            <div class="flex items-center justify-center py-arc-20 md:py-arc-60">
+                <a href="index.html" class="logo-symbol md:logo-full">Arcweave</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="pt-arc-30 md:pt-arc-60 pb-arc-40 md:pb-arc-90">
+    <div class="container block z-10 relative">
+        <div class="block w-full text-center">
+            <h1 class="text-white text-30 md:text-44 lg:text-60 font-semibold block mb-arc-20 md:mb-arc-40 leading-1_2">Sign up for free</h1>
+            <form class="max-w-480 mx-auto mb-arc-40 px-arc-20 md:px-arc-80 pt-arc-30 md:pt-arc-60 pb-arc-30 md:pb-arc-40 bg-arc-blue-g-dark-alt rounded-arc-20" method="POST" action="register">
+                <input type="hidden" name="_token" value="02zhZoDR8kKASQyUQ7ESvKV5MEknMKqantfVuZ8E">
+
+                                    <a href="redirect/google-auth" class="flex items-center bg-arc-light-blue shadow-btn_shadow rounded-full p-arc-3">
+                        <span class="flex justify-center items-center w-arc-54 h-arc-54 bg-white rounded-full mr-arc-14"><svg class="w-arc-32 h-arc-32" viewBox="0 0 366 372" xmlns="http://www.w3.org/2000/svg"><path d="M125.9 10.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z" id="Shape" fill="#EA4335"/><path d="M20.6 102.4c20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3C1.9 232.7-3.8 189.6 4.4 149.2c3.3-16.2 8.7-32 16.2-46.8z" id="Shape" fill="#FBBC05"/><path d="M361.7 151.1c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H186.6c.1-24.2.1-48.4.1-72.6h175z" id="Shape" fill="#4285F4"/><path d="M81.4 222.2c7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62 20.3-15.7 40.6-31.5 60.9-47.3z" fill="#34A853"/></svg></span>
+                        <span class=" text-white text-16 font-semibold tracking-wide">Sign up with Google</span>
+                    </a>
+                    <hr class="or">
+                                <h4 class=" text-18 leading-1_77 font-normal text-white text-center mb-arc-20">Enter your details below</h4>
+                <div class="mb-arc-14">
+                    <input class="block outline-none w-full h-arc-50 bg-white rounded-full px-arc-30 text-arc-blue-g-dark placeholders-arc-input" placeholder="First name" id="first_name" type="text" name="first_name" value="" required autofocus>
+                                    </div>
+                <div class="mb-arc-14">
+                    <input class="block outline-none w-full h-arc-50 bg-white rounded-full px-arc-30 text-arc-blue-g-dark placeholders-arc-input" placeholder="Last name" id="last_name" type="text" name="last_name" value="" required autofocus>
+                                    </div>
+                <div class="mb-arc-14">
+                    <input class="block outline-none w-full h-arc-50 bg-white rounded-full px-arc-30 text-arc-blue-g-dark placeholders-arc-input" placeholder="Email" id="email" type="email" name="email" value=""  required>
+                                                        </div>
+                <div class="mb-arc-14">
+                    <input class="block outline-none w-full h-arc-50 bg-white rounded-full px-arc-30 text-arc-blue-g-dark placeholders-arc-input" placeholder="Password" id="password" type="password" name="password" required>
+                                    </div>
+                <div class="flex items-center mb-arc-18">
+                    <input type="checkbox" id="receive_notifications" name="receive_notifications" value="checked" checked>
+                    <label class="text-12 ml-arc-8 leading-1_77" for="receive_notifications">I agree to receive Arcweave news and updates.</label>
+                </div>
+                                <div class="mb-arc-20">
+                    <button type="submit" class="inline-block text-16 text-white hover:text-white hover:no-underline font-semibold bg-arc-orange px-arc-20 py-arc-18 rounded-full leading-1_4 shadow-btn_shadow w-full text-center outline-none">Sign up</button>
+                </div>
+                <p class=" text-12 leading-1_8 text-center tracking-wide">By proceeding to create your account you agree to our <a href="terms" class="text-arc-orange font-semibold border-b border-dotted border-white">Terms of Service</a> and <a href="privacy" class="text-arc-orange font-semibold border-b border-dotted border-white">Privacy Policy</a>.</p>
+            </form>
+            <p class="text-18 leading-1_77 text-center">Already have an account? <a href="arcjam" class="text-arc-orange font-semibold border-b border-dotted border-white">Login</a></p>
+        </div>
+    </div>
+  </section>
+
+
+    <!-- Scripts -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous" defer></script>
+<script src="js/main.js" defer></script>
+    <script type="text/javascript">
+        WebFontConfig = {
+          google: { families: [ 'Montserrat:300,400,600,700&display=swap' ] }
+        };
+        (function() {
+          var wf = document.createElement('script');
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+          wf.type = 'text/javascript';
+          wf.async = 'true';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- signalzen start -->
+        <!-- <script type="text/javascript">
+        var _sz=_sz||{};_sz.appId="561a40ec",function(){var e=document.createElement("script");e.src="https://cdn.signalzen.com/signalzen.js",e.setAttribute("async","true"),document.documentElement.firstChild.appendChild(e);var t=setInterval(function(){"undefined"!=typeof SignalZen&&(clearInterval(t),new SignalZen(_sz).load())},10)}();
+        </script> -->
+        <!-- signalzen end -->
+
+</body>
+</html>
