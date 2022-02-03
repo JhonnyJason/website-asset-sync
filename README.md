@@ -1,28 +1,57 @@
-# noname - 
+# Webiste Asset Sync 
 
 # Why?
+When cloning a website sometimes assets are missed out on - specifically assets which are loaded dynamically (e.G. Lazy loaded images)
 
 # What?
+A script to scan for any kind of  urls on already downloaded webistes. Checking those whose links were not converted yet, and not downloaded. The script shall dowload the relevant assets  and convert the links then.
 
 # How?
 Requirements
 ------------
+- Nodejs
 
 Installation
 ------------
+git clone https://github.com/JhonnyJason/website-asset-sync
 
 
 Usage
 -----
 
+```
+Usage
+    $ copy-website-assets <arg1> <arg2>
+    
+Options
+    required:
+        arg1, --url <url>, -u <url>
+            url to the remote origin live-version of the website
+            if it does not start with https:// https:// will be prepended#
+    
+    optional:
+        arg2, --directory <path-directory>, -d <path-directory>
+            path to the local directory which is document root of the website clone
+            default is current working directory
+        
+Examples
+    $  copy-website-assets arcweave.com
+    ...
+```
 
 Current Functionality
 ---------------------
+- Goes through all files in the given `directory` parameter (except assets)
+- Considers image-assets as relevant coming from given remote origin url
+- Dowloads all available assets to a `/external-links/` direcory
+- Changes the link to a relative local url
 
 
 ---
 
 # Further steps
+
+- More assets to be considered for downloading?
 
 - ...
 
