@@ -18,3 +18,4 @@ export const regexImagePlus = /\.(gif|jpe?g|tiff?|png|webp|bmp|svg|ico).*$/i
 
 export const regexImageURLExact = /(https?):\/\/.*\.(gif|jpe?g|tiff?|png|webp|bmp|svg|ico)$/i
 
+export const ultimateURLRegex = /(https?:\/\/)(([^|`´#\^\[\]{}=,"'()? <>]+\.)([^|`´#\^\[\]{}=,"'()? <>]+\/))([^|`´#\^\[\]{}=,"'()? <>]*\/)*([^|`´#\^\[\]{}=,"'()? <>]+)\.(gif|jpe?g|tiff?|png|webp|bmp|svg|ico|js|css)/gm
